@@ -1,0 +1,38 @@
+{
+	"useTCMS": true,
+	"TCMS_SOR": "rally",
+	"data": {
+		"path": "./data/",
+		"identifier": ".postman_datafile"
+	},
+	"collection": {
+		"path": "./collections/",
+		"identifier": ".postman_collection"
+	},
+	"environment": {
+		"path": "./environments/",
+		"identifier": ".postman_environment"
+	},
+	"globals": {
+		"path": "./globals/",
+		"identifier": ".postman_globals"
+	},
+	"html": {
+		"export": "./html_reports/",
+	},
+	"junit": {
+		"export": "./newman/",
+	},
+	"defaults": {
+		"timeoutForRequest": 180000,
+		"timeoutForScript": 0,
+		"delayBetweenRequests": 1000,
+		"globalTimeout": 0,
+		"numOfIterations": 1,
+		"reports": {
+			"cli",
+			"junit",
+			"htmlextra"
+		}
+	}
+}

@@ -1,0 +1,42 @@
+[
+	{
+		"folder": "Folder 1",
+		"collection": "Automation",
+		"report_filename": "Folder_1",
+		"TC": "TC123456",
+		"TS": "TS123456",
+		"environment": "Test",
+		"globals": "Automation",
+		"numOfIterations": 1,
+		"delayBetweenRequests": 1000,
+		"globalTimeout": 0,
+		"reports" : [
+			"cli",
+			"junit",
+			"htmlextra"
+		],
+		"timeoutForRequest": 180000,
+		"timeoutForScript": 0,
+		"active": true
+	},
+	{
+		"folder": "Folder 2",
+		"collection": "Automation",
+		"report_filename": "Folder_2",
+		"TC": "TC123457",
+		"TS": "TS123456",
+		"environment": "Test",
+		"globals": "Automation",
+		"numOfIterations": 1,
+		"delayBetweenRequests": 1000,
+		"globalTimeout": 0,
+		"reports" : [
+			"cli",
+			"junit",
+			"htmlextra"
+		],
+		"timeoutForRequest": 180000,
+		"timeoutForScript": 0,
+		"active": true
+	}
+]
