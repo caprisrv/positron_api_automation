@@ -8,6 +8,7 @@
 		"environment": "test",
 		"globals": "placeholder",
 		"numOfIterations": 1,
+		"data": "json:test",
 		"delayBetweenRequests": 1000,
 		"globalTimeout": 0,
 		"reports" : [
@@ -28,6 +29,7 @@
 		"environment": "prod",
 		"globals": "placeholder",
 		"numOfIterations": 1,
+		"data": "json:test",
 		"delayBetweenRequests": 1000,
 		"globalTimeout": 0,
 		"reports" : [
