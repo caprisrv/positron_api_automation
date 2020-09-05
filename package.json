@@ -1,14 +1,14 @@
 {
-	"name": "positron",
+	"name": "api_automation",
 	"version": "1.0.0",
 	"scripts": {
 		"test": "node start.js"
 	},
 	"private": true,
 	"dependencies": {
-		"csv-parser": "^2.3.2",
-		"newman": "^4.5.1",
-		"newman-reporter-html": "^1.0.3",
-		"newman-reporter-htmlextra": "^1.9.2"
+		"csv-parser": "^2.3.3",
+		"newman": "^5.2.0",
+		"newman-reporter-html": "^1.0.5",
+		"newman-reporter-htmlextra": "^1.19.0"
 	}
 }

@@ -34,5 +34,5 @@ Globals:
 - **report_filename** (optional): string - This value should not be contain any spaces. This value is used to name reports for htmlextra and junit. If this value is removed then it will generate a name with the following format: 'collectionName_DateTimeInISO'.
 - **TC** (optional): string (Formatted ID for Rally/Jira) - This is a test case ID that corresponds to an existing test case in a Rally or Jira.
 - **TS** (optional): string (Formatted ID for Rally) - This is only usable by Rally. Do not set this value if TCMS SOR is Jira in config.json. This is the test set ID that used to upload a test result to a test case in a test set in Rally.
-
+- **collection** (mandatory): string - Corresponds to a postman collection that should be used in this test run. Example: "collection": "placeholder": This 
 
