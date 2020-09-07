@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="placeholder" tests="2" time="1.591">
-  <testsuite name="Folder 1 / List Users" id="d765d46c-714f-4960-a38c-62a3e922ff6b" timestamp="2020-09-07T15:59:48.822Z" tests="1" failures="0" errors="0" time="1.415">
-    <testcase name="Status code is 200" time="1.415" classname="Placeholder"/>
+<testsuites name="placeholder" tests="2" time="1.551">
+  <testsuite name="Folder 1 / List Users" id="a7b03914-5f4b-4ac7-a0f8-e21e6a121f7c" timestamp="2020-09-07T16:06:49.521Z" tests="1" failures="0" errors="0" time="1.381">
+    <testcase name="Status code is 200" time="1.381" classname="Placeholder"/>
   </testsuite>
-  <testsuite name="Folder 1 / Single User" id="cc3fc46a-236e-4e95-a4f2-87f145f3a29e" timestamp="2020-09-07T15:59:48.822Z" tests="1" failures="0" errors="0" time="0.176">
-    <testcase name="Status code is 200" time="0.176" classname="Placeholder"/>
+  <testsuite name="Folder 1 / Single User" id="d092be3e-b0b6-47e9-8959-f2724225e542" timestamp="2020-09-07T16:06:49.521Z" tests="1" failures="0" errors="0" time="0.170">
+    <testcase name="Status code is 200" time="0.170" classname="Placeholder"/>
   </testsuite>
 </testsuites>
