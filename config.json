@@ -18,10 +18,10 @@
 		"identifier": ".postman_globals"
 	},
 	"html": {
-		"export": "./html_reports/",
+		"export": "./html_reports/"
 	},
 	"junit": {
-		"export": "./newman/",
+		"export": "./newman/"
 	},
 	"defaults": {
 		"timeoutForRequest": 180000,
@@ -29,10 +29,10 @@
 		"delayBetweenRequests": 1000,
 		"globalTimeout": 0,
 		"numOfIterations": 1,
-		"reports": {
+		"reports": [
 			"cli",
 			"junit",
 			"htmlextra"
-		}
+		]
 	}
 }

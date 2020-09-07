@@ -7,35 +7,166 @@
 	},
 	"item": [
 		{
-			"name": "google.com",
-			"event": [
+			"name": "Folder 1",
+			"item": [
 				{
-					"listen": "test",
-					"script": {
-						"id": "b5ea2de1-1b82-47d4-9b90-9137650a776e",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});"
-						],
-						"type": "text/javascript"
-					}
+					"name": "List Users",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b5ea2de1-1b82-47d4-9b90-9137650a776e",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prod_url}}api/users?page={{var1}}",
+							"host": [
+								"{{prod_url}}api"
+							],
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "{{var1}}"
+								}
+							]
+						},
+						"description": "This is a request to test goolgel.com response"
+					},
+					"response": []
+				},
+				{
+					"name": "Single User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "45b050f1-5dcb-44cf-ba92-6b313c9bc2e8",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{prod_url}}api/users/{{var1}}",
+							"host": [
+								"{{prod_url}}api"
+							],
+							"path": [
+								"users",
+								"{{var1}}"
+							]
+						}
+					},
+					"response": []
 				}
 			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "www.google.com",
-					"host": [
-						"www",
-						"google",
-						"com"
-					]
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Folder 2",
+			"item": [
+				{
+					"name": "Create User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5ce240ca-044d-4f8b-b93e-654dd54d1779",
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([201, 202]);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"{{name}}\",\r\n    \"job\": \"{{job}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{prod_url}}api/users",
+							"host": [
+								"{{prod_url}}api"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
 				},
-				"description": "This is a request to test goolgel.com response"
-			},
-			"response": []
+				{
+					"name": "Register Successful",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d845f989-c31f-4273-9418-217c63f95343",
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([201, 202]);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"eve.holt@reqres.in\",\r\n    \"password\": \"pistol\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{prod_url}}api/users",
+							"host": [
+								"{{prod_url}}api"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
 		}
 	],
 	"protocolProfileBehavior": {}

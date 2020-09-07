@@ -74,6 +74,12 @@ Globals:
 	- **numOfIterations** : number - The number of iterations that the test run will go to. This value is derived in a data driven test run. If this value is set in a data driven test run it will override the derived iteration for a data driven test run. This value is used as a default if a test run does not include it.
 	- **reports** : array[string] - Represents different reporters to be used. "junit", "cli", "htmlextra" and "html" are supported out of the box. More reporters can be added. This value is used as a default if a test run does not include it.
 	
+## start.js:
+- This is javascript file which is used to run specific folder or whole collection of requests, it also generate the html report and save it in a defined location.
+
+## traus-filewriter.js
+- This javascript file is used to write and upload the test cases in Rally or Jira and this file is internally called in start.js file.
+	
 Test Script that can be added to collection test section:
 
 	//Retrieves test_response_time global variable. This value is used as a test for what the expected response time should be. Can be controlled on any level (Collection, Folder, Request) in pre-request scripts using pm.globals.set("test_response_time", value);
@@ -175,13 +181,3 @@ Postman Tips:
 - Pre-Request Scripts: https://learning.postman.com/docs/postman/scripts/pre-request-scripts/
 - Test Scripts: https://learning.postman.com/docs/postman/scripts/test-scripts/
 - Chai Reference for Postman test scripts: https://www.chaijs.com/api/bdd/
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
