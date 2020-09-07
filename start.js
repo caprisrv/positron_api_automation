@@ -12,7 +12,6 @@ const
 		//If report_filename value is not present in runs.json then it will generate a name with the following format: 'collectionName_DateTimeInISO'.
 		if(!collection.report_filename) aleternateHTMLFileName = `${collection.collection}_${new Date().toISOString().slice(0, 16).replace(':', '')}`
 		if (collection.data) {
-			console.log("in data if");
 			const [dataType, dataName] = collection.data.split(':');
 			
 			data = `${config.data.path}${dataName}${config.data.identifier}.${dataType}`;
@@ -21,12 +20,10 @@ const
 				.pipe(csv())
 				.on('data', (data) => results.push(data))
 				.on('end', () => {
-					console.log("in data if toLowerCase");
 					dataLength = results.lenght;
 					console.log(`CSV Parse Complete. Length of ${dataLength}.`);
 				});
 			else if (dataType.toLowerCase() == 'json') {
-				console.log("in data else if");
 				results = require(data);
 				dataLength = results.length;
 			} else throw new Error (`No data type specified for the "${collection.collection}" collection. Please specify eitther csv or json in the data property in your active runs entry. Example: csv:test`);
