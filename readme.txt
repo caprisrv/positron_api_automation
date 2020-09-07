@@ -1,9 +1,13 @@
 ## Summary
 Positron is an API test automation tool that utilizes postman collections, environments, and globals exports. It can run test remotely on Jenkins and has full integrations with TRAUS (Test Results and Assets Upload Service). All test runs in runs.json provide out of the box are valid test run formats in order of decreasing complexity.
 
+##Prerequisite
+1. Node.js and NPM should be installed in your system. Use following link to install the same. (https://nodejs.org/en/download/)
+2. Install NEWMAN by running following command on cmd "npm install -g newman".
+
 ## How to setup:
-1. Fork Repo
-2. Clone Repo
+1. Fork Repo (git clone https://saurabhimpetus@bitbucket.org/saurabhimpetus/api_automation.git)
+2. Clone Repo (git clone https://saurabhimpetus@bitbucket.org/saurabhimpetus/api_automation.git)
 3. Export data from Postman (Instructions in "How to export from Postman" below)
 4. Add test run entry (sample test runs available in runs.json in root directory upon initial clone. All entry properties are documented below in "Individual test run entry (runs.json)")
 5. Set one or more test run entries as active. (Note: Sample test run entries will fail because they use placeholder files.)
