@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="placeholder" tests="2" time="0.805">
-  <testsuite name="Folder 2 / Create User" id="ad05779c-b9b0-4411-b102-652ae2d1333b" timestamp="2020-09-07T15:53:10.591Z" tests="1" failures="0" errors="0" time="0.476">
-    <testcase name="Successful POST request" time="0.476" classname="Placeholder"/>
+<testsuites name="placeholder" tests="2" time="0.431">
+  <testsuite name="Folder 2 / Create User" id="6240ccf2-da94-4f99-8b7e-cfba22ede7aa" timestamp="2020-09-07T15:59:51.328Z" tests="1" failures="0" errors="0" time="0.223">
+    <testcase name="Successful POST request" time="0.223" classname="Placeholder"/>
   </testsuite>
-  <testsuite name="Folder 2 / Register Successful" id="a268d58e-c784-441d-92e4-ee9b033bb587" timestamp="2020-09-07T15:53:10.591Z" tests="1" failures="0" errors="0" time="0.329">
-    <testcase name="Successful POST request" time="0.329" classname="Placeholder"/>
+  <testsuite name="Folder 2 / Register Successful" id="fc131ea0-121f-46a9-88ef-d07e6bdb91d4" timestamp="2020-09-07T15:59:51.328Z" tests="1" failures="0" errors="0" time="0.208">
+    <testcase name="Successful POST request" time="0.208" classname="Placeholder"/>
   </testsuite>
 </testsuites>
