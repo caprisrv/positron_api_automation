@@ -11,7 +11,7 @@ Positron is an API test automation tool that utilizes postman collections, envir
 3. Export data from Postman (Instructions in "How to export from Postman" below)
 4. Add test run entry (sample test runs available in runs.json in root directory upon initial clone. All entry properties are documented below in "Individual test run entry (runs.json)")
 5. Set one or more test run entries as active. (Note: Sample test run entries will fail because they use placeholder files.)
-6. Use command "npm test" from Positron roor directory to execute active test run entries.
+6. Use command "npm test" from Positron root directory to execute active test run entries.
 
 ## How to export from Postman:
 Collections:
