@@ -169,5 +169,44 @@
 			"protocolProfileBehavior": {}
 		}
 	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "31fefedf-2989-474c-b46b-41c32b43d839",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "b6b85420-0503-40c5-9eb5-26abb72e5523",
+				"type": "text/javascript",
+				"exec": [
+					"var time = pm.response.responseTime;",
+					"console.log(\"Response Time of \" +request.url+ \" is \" +time);",
+					"",
+					"try{",
+					"    loc = pm.response.headers.get(\"content-type\");",
+					"",
+					"    if(loc==\"text/plain;charset=UTF-8\"){",
+					"        var res1=pm.response.text();",
+					"        console.log(\"Response : \"+res1);",
+					"    }",
+					"    else if(loc==\"application/json;charset=UTF-8\"){",
+					"        var res2=pm.response.json();",
+					"        console.log(\"Response : \"+res2);",
+					"    }",
+					"}",
+					"catch(err){",
+					"    console.log(err);",
+					"}"
+				]
+			}
+		}
+	],
 	"protocolProfileBehavior": {}
 }
